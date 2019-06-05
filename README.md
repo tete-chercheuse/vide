@@ -1,10 +1,5 @@
-[![NPM version](https://img.shields.io/npm/v/vide.svg?style=flat)](https://npmjs.org/package/vide)
-[![Bower version](https://badge.fury.io/bo/vide.svg)](http://badge.fury.io/bo/vide)
-[![Travis](https://travis-ci.org/VodkaBears/Vide.svg?branch=master)](https://travis-ci.org/VodkaBears/Vide)
 Vide
 ====
-
-**No longer actively maintained. I am not interested to maintain jQuery plugins anymore. If you have some fixes, feel free to make PR.**
 
 Easy as hell jQuery plugin for video backgrounds.
 
