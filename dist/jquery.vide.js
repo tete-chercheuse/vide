@@ -1,9 +1,9 @@
 /*
- *  Vide - v0.5.1
+ *  Vide - v1.0.0
  *  Easy as hell jQuery plugin for video backgrounds.
  *  http://vodkabears.github.io/vide/
  *
- *  Made by Ilya Makarov
+ *  Made by Tête Chercheuse
  *  Under MIT License
  */
 !(function(root, factory) {
@@ -304,9 +304,9 @@
         sources += '<source src="' + path.ogv + '.ogv" type="video/ogg">';
       }
 
-      $video = vide.$video = $('<video>' + sources + '</video>');
+      $video = vide.$video = $('<video webkit-playsinline playsinline>' + sources + '</video>');
     } else {
-      $video = vide.$video = $('<video>' +
+      $video = vide.$video = $('<video webkit-playsinline playsinline>' +
         '<source src="' + path + '.mp4" type="video/mp4">' +
         '<source src="' + path + '.webm" type="video/webm">' +
         '<source src="' + path + '.ogv" type="video/ogg">' +
@@ -351,6 +351,9 @@
     // Resize a video, when it's loaded
     .one('canplaythrough.' + PLUGIN_NAME, function() {
       vide.resize();
+      if (settings.autoplay) {
+        $video[0].play();
+      }
     })
 
     // Make it visible, when it's already playing

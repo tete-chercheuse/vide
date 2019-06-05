@@ -1,8 +1,8 @@
 {
   "name": "vide",
-  "homepage": "http://vodkabears.github.io/vide/",
+  "homepage": "https://github.com/tete-chercheuse/vide",
   "authors": [
-    "Ilya Makarov <dfrost.00@gmail.com>"
+    "Steliann <steliann@tete-chercheuse.fr>"
   ],
   "description": "Easy as hell jQuery plugin for video backgrounds.",
   "main": "dist/jquery.vide.js",

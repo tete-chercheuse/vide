@@ -82,15 +82,6 @@ module.exports = function(grunt) {
       }
     },
 
-    githooks: {
-      all: {
-        'pre-commit': 'lint'
-      },
-      options: {
-        command: 'node_modules/.bin/grunt'
-      }
-    },
-
     exec: {
       'meteor-test': {
         command: 'node_modules/.bin/spacejam test-packages ./'
@@ -103,12 +94,11 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-jshint');
   grunt.loadNpmTasks('grunt-contrib-qunit');
   grunt.loadNpmTasks('grunt-contrib-uglify');
-  grunt.loadNpmTasks('grunt-githooks');
   grunt.loadNpmTasks('grunt-jscs');
   grunt.loadNpmTasks('grunt-exec');
 
   grunt.registerTask('default', [
-    'connect', 'jshint', 'jscs', 'qunit', 'concat', 'uglify', 'githooks'
+    'connect', 'jshint', 'jscs', 'qunit', 'concat', 'uglify'
   ]);
   grunt.registerTask('lint', [
     'jshint', 'jscs'

@@ -1,3 +1,6 @@
+### 1.0.0
+* Fix for new browsers versions
+
 ### 0.5.1
 * Remove deprecated jQuery load method.
 

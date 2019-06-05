@@ -4,18 +4,8 @@ Easy as hell jQuery plugin for video backgrounds.
 
 ## Notes
 
-* All modern desktop browsers are supported.
+* All modern browsers are supported.
 * IE9+
-* iOS plays video from a browser only in the native player. So video for iOS is
-disabled, only fullscreen poster will be used.
-* Some android devices play video, some not — go figure. So video for android is
-disabled, only fullscreen poster will be used.
-
-## Install
-
-```sh
-meteor add vodkabears:vide
-```
 
 ## Usage
 
@@ -54,7 +44,7 @@ Below is a complete list of options and matching default values:
   autoplay: true,
   position: '50% 50%', // Similar to the CSS `background-position` property.
   posterType: 'detect', // Poster image type. "detect" — auto-detection; "none" — no poster; "jpg", "png", "gif",... - extensions.
-  resizing: true // Auto-resizing, read: https://github.com/VodkaBears/Vide#resizing
+  resizing: true // Auto-resizing, read: https://github.com/tete-chercheuse/vide#resizing
 }
 ```
 
@@ -81,4 +71,4 @@ instance.destroy();
 ## More Info
 
 See full documentation on
-[Github](https://github.com/VodkaBears/Vide).
+[Github](https://github.com/tete-chercheuse/vide).

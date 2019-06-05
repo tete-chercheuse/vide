@@ -7,13 +7,11 @@ Easy as hell jQuery plugin for video backgrounds.
 
 * All modern desktop browsers are supported.
 * IE9+
-* iOS plays video from a browser only in the native player. So video for iOS is disabled, only fullscreen poster will be used.
-* Some android devices play video, some not — go figure. So video for android is disabled, only fullscreen poster will be used.
 
 ## Instructions
 
-Download it from [GitHub](https://github.com/VodkaBears/Vide/releases/latest) or via Bower:
-`bower install vide`
+Download it from [GitHub](https://github.com/tete-chercheuse/vide/releases/latest) or via Bower:
+`bower install tete-chercheuse/vide`
 
 Include plugin: `<script src="js/jquery.vide.min.js"></script>`
 
@@ -74,7 +72,7 @@ Below is a complete list of options and matching default values:
   autoplay: true,
   position: '50% 50%', // Similar to the CSS `background-position` property.
   posterType: 'detect', // Poster image type. "detect" — auto-detection; "none" — no poster; "jpg", "png", "gif",... - extensions.
-  resizing: true, // Auto-resizing, read: https://github.com/VodkaBears/Vide#resizing
+  resizing: true, // Auto-resizing, read: https://github.com/tete-chercheuse/vide#resizing
   bgColor: 'transparent', // Allow custom background-color for Vide div,
   className: '' // Add custom CSS class to Vide div
 }
@@ -108,54 +106,3 @@ Set the `resizing` option to false to disable auto-resizing.
 ## Encoding video
 
 http://diveintohtml5.info/video.html#miro
-
-## Meteor
-
-### Install
-
-```sh
-meteor add vodkabears:vide
-```
-
-### Usage
-
-Because of how meteor renders templates reactively you will need to initialize
-manually for the templates you want to use vide in.
-
-```js
-Template.templateName.onRendered(function() {
-  this.$('#elementName').vide('fileNameWithoutExtension');
-});
-```
-
-Meteor integration by [zimme](https://github.com/zimme).
-
-## Ruby Gem
-
-[Vider](https://github.com/wazery/vider) by Islam Wazery.
-
-## License
-
-```
-The MIT License (MIT)
-
-Copyright (c) 2015 Ilya Makarov
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
-```
